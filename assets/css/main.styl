@@ -1,0 +1,526 @@
+@import "variables"
+@import "globals"
+@import "components"
+@import "header"
+@import "footer"
+
+.section_banner
+    min-height 490px
+    display flex
+    .container
+        display flex
+        justify-content stretch
+        max-width 1086px
+        .col
+            display flex
+            flex-direction column
+            justify-content center
+            align-items flex-start
+            &:nth-child(2)
+                align-items center
+            h1
+                font-size 3.125rem
+                margin-bottom 1.25rem
+            img
+                max-width 456px
+
+.section_clients
+    background-color $primary_color
+    min-height 154px
+    .slider
+        display flex
+        width 100%
+        overflow hidden
+        .slide
+            width 150px
+            transition transform 0.5s ease
+.section_we_are
+    height calc(100vh - var(--nav-height))
+    background-color $white
+    display flex
+    padding 5.625rem 0
+    .container
+        display flex
+        justify-content stretch
+        max-width 890px
+        gap 6.25rem
+        .col
+            display flex
+            align-items center
+            &:nth-child(1)
+                width 60%
+            &:nth-child(2)
+                width 40%
+            .description
+                font-size 1.25rem
+                text-align justify
+                font-family 'Gilroy Medium'
+        h2
+            display flex
+            color $primary_color
+            .subtitle_border
+                font-size 2.75rem
+                text-transform uppercase
+                color $white
+                writing-mode vertical-lr
+                -webkit-text-stroke 2px $primary_color
+                transform rotate(180deg)
+                text-align center
+            .text
+                position relative
+                display flex
+                flex-direction column
+                .sub
+                    font-size 2.5rem
+                .sub2
+                    font-size 3.125rem
+                    margin-top -10px
+                .sub3
+                    font-size 2.5rem
+                    margin-top -10px
+                .sub4
+                    font-size 1.625rem
+.section_services
+    height calc(100vh - var(--nav-height))
+    background-color $gray_superlight
+    display flex
+    flex-direction column
+    padding 5.625rem 0
+    .container
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        .subtitle
+            color $primary_color
+            margin-bottom 3rem
+        .card_services
+            display flex
+            flex-wrap wrap
+            justify-content center
+            width 100%
+            gap 1.5rem
+            margin-bottom 3rem
+            .card
+                background-color $white
+                border-radius 1.5rem 1.5rem 0 1.5rem
+                padding 1.875rem 1.375rem
+                display flex
+                flex-direction column
+                justify-content space-between
+                width 23%
+                .info
+                    display flex
+                    flex-direction column
+                    justify-content space-between
+                    margin-bottom 2.375rem
+                    height 100%
+                    .icon_and_text
+                        img
+                            width 48px
+                            height 48px
+                            object-fit contain
+                            margin-bottom 8px
+                        h3
+                            font-size 1.5rem
+                            color $gray
+                            margin-bottom 1rem
+                .terciary_button
+                    align-self flex-start
+.section_testimonial
+    height calc(100vh - var(--nav-height))
+    background-color $white
+    display flex
+    padding 5.625rem 0
+    flex-direction column
+    justify-content center
+    .container
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        &:nth-child(2)
+            padding 0
+        .subtitle
+            color $primary_color
+            margin-bottom 3.5rem
+        .swiffy-slider
+            --swiffy-slider-item-reveal 0
+        .slider-container
+            .card_testimonial
+                border-radius 1.5rem 1.5rem 0 1.5rem
+                border 1px solid $primary_color
+                padding 2.5rem
+                display flex
+                flex-direction column
+                justify-content space-between
+                .description
+                    margin-bottom 3rem
+                .logo_client
+                    max-width 100px
+                    object-fit contain
+.section_contact
+    height calc(100vh - var(--nav-height))
+    background-color $primary_color
+    display flex
+    justify-content center
+    align-items center
+    .container
+        max-width 656px
+        .subtitle
+            color $white
+            margin-bottom 1.5rem
+        form
+            .contact_form
+                display flex
+                flex-wrap wrap
+                gap 24px
+                .box_input
+                    width 100%
+                    &.box_input_50
+                        width calc(50% - 12px)
+                    p
+                        span
+                            input[type="text"]          
+                            input[type="email"]          
+                            input[type="number"]    
+                                width 100%
+                                height 44px
+                                border-radius .625rem
+                                font-size 1rem
+                                background-color $white
+                                outline none
+                                padding .875rem 1.375rem
+                                transition all 0.3s ease
+                                color $black
+                                font-family 'Gilroy Medium'
+                                &:focus
+                                    box-shadow 0px 0px 0px 2px $purple
+                                &:placeholder
+                                    color $gray_light
+
+                .box_textarea
+                    p
+                        textarea
+                            width 100%
+                            border-radius .625rem
+                            font-size 1rem
+                            outline none
+                            padding .875rem 1.375rem
+                            transition all 0.3s ease
+                            background-color $white
+                            color $black
+                            resize none
+                            font-family 'Gilroy Medium'
+                            &:focus
+                                box-shadow 0px 0px 0px 2px $purple
+                            &:placeholder
+                                color $gray_light
+                .btn_send
+                    width 100%
+                    display flex
+                    justify-content center
+                    input[type="submit"]
+                        border none
+                        outline none
+                        cursor pointer
+                        padding-left 3.125rem
+                        padding-right 3.125rem
+.page_services
+    .main_body
+        .section_services
+            height auto
+            .container
+                &:nth-child(1)
+                    margin-bottom 3.25rem
+                    .subtitle
+                        text-transform uppercase
+                        margin-bottom .5rem
+                    .description
+                        font-size 1.5rem
+.page_about
+    .main_body
+        .section_banner
+            height calc(100vh - var(--nav-height))
+            min-height 490px
+            display flex
+            .container
+                display flex
+                justify-content center
+                max-width 1086px
+                h1
+                    display flex
+                    color $primary_color
+                    align-items center
+                    .subtitle_border
+                        font-size 5.625rem
+                        text-transform uppercase
+                        color $white
+                        writing-mode vertical-lr
+                        -webkit-text-stroke 2px $primary_color
+                        transform rotate(180deg)
+                        text-align center
+                    .text
+                        position relative
+                        display flex
+                        flex-direction column
+                        .sub
+                            font-size 4.0625rem
+                        .sub2
+                            font-size 4.25rem
+                            margin-top -10px
+                        .sub3
+                            font-size 4.0625rem
+                            margin-top -10px
+                        .sub4
+                            font-size 4.375rem
+                        .sub5
+                            font-size 2.25rem
+        .section_mision
+            height calc(100vh - var(--nav-height))
+            min-height 40rem
+            background-color $gray_superlight
+            display flex
+            padding 5.625rem 0
+            .container
+                max-width 1000px
+                display flex
+                gap 6.25rem
+                .col
+                    display flex
+                    flex-direction column
+                    justify-content center
+                    &:nth-child(1)
+                        width 30%
+                    &:nth-child(2)
+                        width 70%
+                    .subtitle
+                        color $primary_color
+                        font-size 5rem
+                        line-height 1.2
+                    .super_description
+                        font-family 'Gilroy Bold'
+                        font-size 2rem
+                        margin-bottom 1rem
+                    .description
+                        font-size 1.25rem
+        .section_vision
+            height calc(100vh - var(--nav-height))
+            min-height 40rem
+            background-color $white
+            display flex
+            padding 5.625rem 0
+            .container
+                max-width 1000px
+                display flex
+                gap 6.25rem
+                .col
+                    display flex
+                    flex-direction column
+                    justify-content center
+                    &:nth-child(1)
+                        width 30%
+                    &:nth-child(2)
+                        width 70%
+                    .subtitle
+                        color $primary_color
+                        font-size 5rem
+                        line-height 1.2
+                    .super_description
+                        font-family 'Gilroy Bold'
+                        font-size 2rem
+                        margin-bottom 1rem
+                    .description
+                        font-size 1.25rem
+        .section_earth
+            height calc(100vh - var(--nav-height))
+            min-height 40rem
+            background-color $primary_color
+            display flex
+            flex-direction column
+            padding 5rem 0 0
+            .container
+                margin-bottom 5rem
+                .subtitle
+                    color $white
+                    margin-bottom .9375rem
+                .description
+                    color $white
+                    font-size 1.5rem
+                    text-align center
+            .map
+                width 100%
+                height 100%
+                background url('/assets/img/img_mapamundi_gris.svg')
+                background-position top center
+                background-size cover
+
+@media screen and (max-width: 1024px)
+    .section_we_are
+        .container
+            gap 1.875rem
+            .col
+                display flex
+                align-items center
+                &:nth-child(1)
+                    width 55%
+                &:nth-child(2)
+                    width 45%
+    .section_services
+        height auto
+        min-height 100vh
+        .container
+            .card_services
+                .card
+                    width 100%
+                    max-width 300px
+    .section_testimonial
+        .container
+            .slider-container
+                padding 0 1.875rem
+                &:before
+                    content ''
+                    background linear-gradient(90deg, #ffffff, rgba(0,0,0,0,5))
+                    z-index 1
+                    position: absolute
+                    left 0
+                    width 60px
+                    height 100%
+                &:after
+                    content ''
+                    background linear-gradient(-90deg, #ffffff, rgba(0,0,0,0,5))
+                    z-index 1
+                    position: absolute
+                    right 0
+                    width 60px
+                    height 100%
+            .swiffy-slider
+                --swiffy-slider-item-count 2
+                --swiffy-slider-item-reveal 1rem
+@media screen and (max-width: 768px)
+    .section_we_are
+        .container
+            flex-direction column
+            justify-content center
+            .col
+                justify-content center
+                &:nth-child(1)
+                &:nth-child(2)
+                    width 100%
+                .description
+                    max-width 380px
+    .section_mision
+    .section_vision
+        .container
+            flex-direction column
+            gap 3rem
+@media screen and (max-width: 640px)
+    .section_banner
+        .container
+            flex-direction column-reverse
+            justify-content center
+            .col
+                &:nth-child(1)
+                &:nth-child(2)
+                    width 100%
+                    align-items flex-start
+                h1
+                    font-size 11vw
+                    margin-bottom 2rem
+                img
+                    max-width 80%
+    .section_we_are
+        .container
+            flex-direction column
+            justify-content center
+            .col
+                justify-content center
+                &:nth-child(1)
+                &:nth-child(2)
+                    width 100%
+                h2
+                    .subtitle_border
+                        font-size 9.5vw
+                    .sub
+                        font-size 9vw
+                    .sub2
+                        font-size 11vw
+                    .sub3
+                        font-size 9vw
+                    .sub4
+                        font-size 6vw
+                .description
+                    max-width 380px
+    .section_services
+        h2
+            font-size 8vw
+        .container
+            .card_services
+                .card
+                    width 100%
+                    max-width 70%
+    .section_testimonial
+        .container
+            h2
+                font-size 8vw
+            .swiffy-slider
+                --swiffy-slider-item-count 1
+                --swiffy-slider-item-reveal 2rem
+            .slider-container
+                .card_testimonial
+                    padding 3.125rem 1.875rem
+                    .description
+                        margin-bottom 1rem
+    .section_contact
+        .container
+            display flex
+            flex-direction column
+            align-items center
+            .subtitle
+                font-size 8vw
+            form
+                max-width 80%
+                .contact_form
+                    gap 1rem
+                    .box_input
+                        &.box_input_100_mobile
+                            width 100%
+    .page_about
+        .main_body
+            .section_banner
+                .container
+                    h1
+                        .subtitle_border
+                            font-size 14vw
+                        .text
+                            .sub
+                                font-size 10vw
+                            .sub2
+                                font-size 10vw
+                            .sub3
+                                font-size 10vw
+                            .sub4
+                                font-size 10vw
+                            .sub5
+                                font-size 5.5vw
+            .section_mision
+            .section_vision
+                .container
+                    flex-direction column
+                    gap 2.5rem
+                    justify-content center
+                    .col
+                        &:nth-child(1)
+                        &:nth-child(2)
+                            width 100%
+                            justify-content flex-start
+                        .subtitle
+                            font-size 20vw
+                            text-align left
+                        .super_description
+                            font-size 7vw
+            .section_earth
+                height calc(80vh - var(--nav-height))
+                min-height auto
+                .map
+                    background-size 170%
