@@ -11,76 +11,80 @@
     <!-- <link rel="stylesheet" href="assets/css/swiffy-slider.min.css"> -->
 </head>
 <body class="page_about">
-    <!-- 1. HEADER -->
-    <header class="section_header">
-        <div class="container">
-            <div class="header_logo">
-                <a href="index.html">
-                    <ul class="logo_all">
-                        <li>
-                            <figure>
-                                <img src="assets/img/logo-basher.png" alt="Logo de Basher" class="logo" width="170" height="46">
-                            </figure>
-                        </li>
-                    </ul>
-                </a>
+    <div class="loader">
+        <img src="assets/img/Loader-logo-fondo-white.svg" alt="Loader Basher">
+    </div>
+    <div class="main_scrollsnap">
+        <!-- 1. HEADER -->
+        <header class="section_header">
+            <div class="container">
+                <div class="header_logo">
+                    <a href="index.html">
+                        <ul class="logo_all">
+                            <li>
+                                <figure>
+                                    <img src="assets/img/logo-basher.svg" alt="Logo de Basher" class="logo" width="170" height="46">
+                                </figure>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="header_links">
+                    <nav class="links_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="">
+                                    Submenu
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/>
+                                    </svg>
+                                </a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="">Submenu link 1</a></li>
+                                        <li><a href="">Submenu link 2</a></li>
+                                        <li><a href="">Submenu link 3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="link_button">
+                        <a href="#cotizar" class="primary_button">Contact</a>
+                    </div>
+                    <div class="language_switcher">
+                        ES
+                        <span class="flecha"></span>
+                    </div>
+                    <div class="icon">
+                        <img src="assets/img/logo-b-basher.svg" alt="Icono de Basher" width="190" height="164">
+                    </div>
+                </div>
+                <div class="header_menu">
+                    <div class="menu_toggle">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
             </div>
-            <div class="header_links">
-                <nav class="links_menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li class="menu-item-has-children">
-                            <a href="">
-                                Submenu
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M112 184l144 144 144-144"/>
-                                </svg>
-                            </a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="">Submenu link 1</a></li>
-                                    <li><a href="">Submenu link 2</a></li>
-                                    <li><a href="">Submenu link 3</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="link_button">
-                    <a href="#cotizar" class="primary_button">Contact</a>
-                </div>
-                <div class="language_switcher">
-                    ES
-                    <span class="flecha"></span>
-                </div>
-                <div class="icon">
-                    <img src="/assets/img/icon-basher.png" alt="Icono de Basher" width="190" height="164">
-                </div>
-            </div>
-            <div class="header_menu">
-                <div class="menu_toggle">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- CONTENIDO -->
-    <main class="main_body">
+        </header>
         <!-- 2. BANNER -->
         <section class="section_banner">
             <div class="container">
                 <h1>
-                    <span class="subtitle_border">Somos</span>
+                    <span class="subtitle_border">
+                        <p>Somos</p>
+                    </span>
                     <span class="text">
-                        <span class="sub">TU SOCIO</span>
-                        <span class="sub2">ESTRATÉGICO</span>
-                        <span class="sub3">en el universo</span>
-                        <span class="sub4">DEL GAMING:</span>
-                        <span class="sub5">igaming, esports & sports.</span>
+                        <span class="sub_text sub"><p>TU SOCIO</p></span>
+                        <span class="sub_text sub2"><p>ESTRATÉGICO</p></span>
+                        <span class="sub_text sub3"><p>en el universo</p></span>
+                        <span class="sub_text sub4"><p>DEL GAMING:</p></span>
+                        <span class="sub_text sub5"><p>igaming, esports & sports.</p></span>
                     </span>
                 </h1>
             </div>
@@ -89,11 +93,17 @@
         <section class="section_mision">
             <div class="container">
                 <div class="col">
-                    <h2 class="subtitle">Mision</h2>
+                    <span class="line_subtitle">
+                        <h2 class="subtitle">Mision</h2>
+                    </span>
                 </div>
                 <div class="col">
-                    <div class="super_description">At Basher Agency, we are committed to enhancing your acquisition and visibility in the competitive world of gaming.</div>
-                    <div class="description">We lead as the top agency in LATAM, specializing in iGaming, video games, and esports, blending strategic creativity with data-driven focus to propel your brand presence to new heights.</div>
+                    <span class="line_sup_description">
+                        <div class="super_description">At Basher Agency, we are committed to enhancing your acquisition and visibility in the competitive world of gaming.</div>
+                    </span>
+                    <span class="line_description">
+                        <div class="description">We lead as the top agency in LATAM, specializing in iGaming, video games, and esports, blending strategic creativity with data-driven focus to propel your brand presence to new heights.</div>
+                    </span>
                 </div>
             </div>
         </section>
@@ -101,11 +111,17 @@
         <section class="section_vision">
             <div class="container">
                 <div class="col">
-                    <h2 class="subtitle">Vision</h2>
+                    <span class="line_subtitle">
+                        <h2 class="subtitle">Vision</h2>
+                    </span>
                 </div>
                 <div class="col">
-                    <div class="super_description">To be the driving force behind the transformation of marketing in the gaming industry in LATAM</div>
-                    <div class="description">Connecting brands exceptionally with their audiences through innovative strategies and tangible results.</div>
+                    <span class="line_sup_description">
+                        <div class="super_description">To be the driving force behind the transformation of marketing in the gaming industry in LATAM</div>
+                    </span>
+                    <span class="line_description">
+                        <div class="description">Connecting brands exceptionally with their audiences through innovative strategies and tangible results.</div>
+                    </span>
                 </div>
             </div>
         </section>
@@ -115,111 +131,208 @@
                 <h2 class="subtitle">Where we operate</h2>
                 <div class="description">Estamos en 8 lugares alrededor del mundo</div>
             </div>
-            <div class="map">       
+            <div class="map">
+                <div class="list_countries">
+                    <div class="country c_canada">
+                        <p>Canada</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_mexico">
+                        <p>México</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_colombia">
+                        <p>Colombia</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_peru">
+                        <p>Peru</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_chile">
+                        <p>Chile</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_argentina">
+                        <p>Argentina</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_brazil">
+                        <p>Brazil</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_netherlands">
+                        <p>Netherlands</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_germany">
+                        <p>Germany</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_malaysa">
+                        <p>Malaysa</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_singapore">
+                        <p>Singapore</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_indonesia">
+                        <p>Indonesia</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                    <div class="country c_philippines">
+                        <p>Philippines</p>
+                        <span class="map_indicator">
+                            <span class="circle"></span>
+                            <span class="indicator"></span>
+                        </span>
+                    </div>
+                </div>  
             </div>
         </section>
-    </main>
-    <!-- 8. FOOTER -->
-    <footer class="section_footer">
-        <div class="pre_foo">
-            <div class="container">
-                <div class="col col-50">
-                    <a href="index.html">
-                        <ul class="logo_all">
+        <!-- 8. FOOTER -->
+        <footer class="section_footer">
+            <div class="pre_foo">
+                <div class="container">
+                    <div class="col col-50">
+                        <a href="index.html">
+                            <ul class="logo_all">
+                                <li>
+                                    <figure>
+                                        <img src="assets/img/logo-basher.svg" alt="Logo de Basher" class="logo" width="170" height="46">
+                                    </figure>
+                                </li>
+                            </ul>
+                        </a>
+                        <ul class="social_links">
                             <li>
-                                <figure>
-                                    <img src="assets/img/logo-basher.png" alt="Logo de Basher" class="logo" width="170" height="46">
-                                </figure>
+                                <a href="#">
+                                    <img src="assets/img/icon_linkedin.svg" alt="LinkedIn">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_discord.svg" alt="Discord">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_youtube.svg" alt="YouTube">
+                                </a>
                             </li>
                         </ul>
-                    </a>
-                    <ul class="social_links">
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_linkedin.svg" alt="LinkedIn">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_instagram.svg" alt="Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_discord.svg" alt="Discord">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_facebook.svg" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_youtube.svg" alt="YouTube">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col col-50">
-                    <nav class="links_menu_prefooter">
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about-us.html">Nosotros</a></li>
-                            <li><a href="services.html">Servicios</a></li>
-                            <li><a href="">Contacto</a></li>
-                        </ul>
-                    </nav>
+                    </div>
+                    <div class="col col-50">
+                        <nav class="links_menu_prefooter">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="about-us.html">Nosotros</a></li>
+                                <li><a href="services.html">Servicios</a></li>
+                                <li><a href="">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="pos_foo">
-            <div class="container">
-                <div class="col col-50">
-                    <p class="copy">
-                        Basher 2009-2022 © |  Forbidden for children. 18+
-                    </p>
-                </div>
-                <div class="col col-50">
-                    <nav class="links_menu_posfooter">
-                        <ul>
-                            <li><a href="">Términos y condiciones</a></li>
-                            <li><a href="">Políticas y privacidad</a></li>
+            <hr>
+            <div class="pos_foo">
+                <div class="container">
+                    <div class="col col-50">
+                        <p class="copy">
+                            Basher 2009-2022 © |  Forbidden for children. 18+
+                        </p>
+                    </div>
+                    <div class="col col-50">
+                        <nav class="links_menu_posfooter">
+                            <ul>
+                                <li><a href="tyc.html">Términos y condiciones</a></li>
+                                <li><a href="politicas.html">Políticas y privacidad</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="social_links">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_linkedin.svg" alt="LinkedIn">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_discord.svg" alt="Discord">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/icon_youtube.svg" alt="YouTube">
+                                </a>
+                            </li>
                         </ul>
-                    </nav>
-                    <ul class="social_links">
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_linkedin.svg" alt="LinkedIn">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_instagram.svg" alt="Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_discord.svg" alt="Discord">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_facebook.svg" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="assets/img/icon_youtube.svg" alt="YouTube">
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js"></script>
+    
     <script>
         $(document).ready(function() {
             var $subMenu = $('.submenu');
@@ -245,57 +358,224 @@
         });
 
         $(document).ready(function() {
-            // Inicializar la clase .selected en el custom-option correcto al cargar la página
-            $('.custom-select-wrapper').each(function() {
-                var selectedValue = $(this).find('.native-select').val();
-                $(this).find('.custom-option[data-value="' + selectedValue + '"]').addClass('selected');
-            });
-
-            // Mostrar u ocultar el options-list usando la clase .active
-            $('.custom-select').click(function(e) {
-                e.stopPropagation(); // Evitar que el evento se propague a document
-
-                // Cerrar todos los otros options-list abiertos
-                $('.options-list.active').not($(this).find('.options-list')).removeClass('active');
-
-                // Alternar la clase .active en el options-list hijo
-                $(this).find('.options-list').toggleClass('active');
-            });
-
-
-            // Pasar el valor seleccionado del custom-option al select nativo y añadir/quitar la clase .selected
-            $('.custom-option').click(function(e) {
-                e.stopPropagation(); // Evitar que el evento se propague al custom-select o document
-
-                var value = $(this).data('value');
-                var text = $(this).text();
-                
-                // Actualizar el select nativo
-                $(this).closest('.custom-select-wrapper').find('.native-select').val(value);
-                
-                // Actualizar el texto de la opción seleccionada
-                $(this).closest('.custom-select').find('.selected-option').text(text);
-
-                // Añadir la clase .selected al custom-option seleccionado y quitarla de los demás
-                $(this).siblings().removeClass('selected');
-                $(this).addClass('selected');
-
-                // Cerrar el options-list
-                $(this).closest('.options-list').removeClass('active');
-            });
-
-            // Cerrar el options-list si se hace clic fuera de él
-            $(document).click(function() {
-                $('.options-list.active').removeClass('active');
-            });
-        });
-
-        $(document).ready(function() {
             $('.menu_toggle').on('click', function() {
                 $('.header_links').toggleClass('show'); 
                 $('body').toggleClass('no-scroll'); 
                 $(this).toggleClass('active');
             });
+        });
+
+        var copy = $('.slide_track').clone(true);
+        $('.slider').append(copy);
+
+        $(document).ready(function(){
+            var header = $('.section_header'); // Selecciona el elemento del encabezado
+            var headerLinks = $('.header_links'); // Selecciona los enlaces del encabezado
+            var mainScrollsnap = $('.main_scrollsnap'); // Selecciona el contenedor con scroll
+
+            function addOrRemoveStickyClasses() {
+                var containerScrolled = mainScrollsnap.scrollTop() > 50; // Verifica si el contenedor .main_scrollsnap se ha desplazado más de 50px
+
+                if(containerScrolled) {
+                    header.addClass('sticky'); // Añade clase 'sticky' si el contenedor se ha desplazado
+                    if($(window).width() <= 768) {
+                        headerLinks.addClass('sticky_links'); // Añade clase 'sticky_links' a los enlaces si la pantalla es pequeña
+                    }
+                } else {
+                    header.removeClass('sticky'); // Remueve clase 'sticky' si el desplazamiento del contenedor está al principio
+                    headerLinks.removeClass('sticky_links'); // Remueve clase 'sticky_links' de los enlaces
+                }
+            }
+
+            // Escuchar el evento de scroll en el contenedor .main_scrollsnap para actualizar el encabezado y los enlaces
+            mainScrollsnap.scroll(function() {
+                addOrRemoveStickyClasses();
+            });
+        });
+
+
+
+        $(window).on('load', function() {
+            var $loader = $('.loader');
+            var $image = $('.loader img');
+
+            // Esperar 2 segundos después de que la página se haya cargado antes de comenzar la animación de salida
+            setTimeout(function() {
+                var duration = 1000; // Duración de la animación de salida en ms
+                var startTime = performance.now();
+
+                // Eliminar la animación CSS 'pulse'
+                $image.css('animation', 'none');
+
+                // Función para actualizar la animación de salida
+                function animate(time) {
+                    var timeElapsed = time - startTime;
+                    var progress = timeElapsed / duration;
+
+                    // Calcular la nueva escala y opacidad
+                    var scale = 1 + (29 * progress); // Incrementar de 1 a 30
+                    var opacity = 1 - progress; // Decrementar de 1 a 0
+
+                    // Aplicar transformaciones
+                    $image.css('transform', 'scale(' + scale + ')');
+                    $loader.css('opacity', opacity);
+
+                    // Si la animación no ha terminado, repetir el frame
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(animate);
+                    } else {
+                        // Finalizar la animación
+                        $loader.css('visibility', 'hidden');
+                    }
+                }
+
+                // Iniciar la animación de salida
+                requestAnimationFrame(animate);
+
+            }, 2000); // Retraso de 2 segundos antes de iniciar la animación de salida
+        });
+
+
+        // ANIMACIONES GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animación para .subtitle_border p
+        gsap.from(".subtitle_border p", 1.8, {
+            y: 240,
+            ease: "power4.out",
+            skewY: 7,
+            delay: 0.1,
+            stagger: {
+                amount: 0.3
+            },
+            scrollTrigger: {
+                trigger: ".subtitle_border p",
+                scroller: ".main_scrollsnap",
+                start: "top 80%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none"
+            }
+        });
+
+        // Animación para .sub_text p
+        gsap.from(".sub_text p", 1.8, {
+            y: 100,
+            ease: "power4.out",
+            delay: 1, 
+            skewY: 7,
+            stagger: {
+                amount: 0.5
+            },
+            scrollTrigger: {
+                trigger: ".sub_text p",
+                scroller: ".main_scrollsnap",
+                start: "top 80%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none"
+            }
+        });
+        // MISION
+        gsap.from(".section_mision .line_subtitle .subtitle", 1, {
+            x: -300,  // Cambio de "y" a "x" para el movimiento de izquierda a derecha
+            ease: "power4.out",
+            delay: 0.1,
+            stagger: {
+                amount: 0.3
+            },
+            scrollTrigger: {
+                trigger: ".line_subtitle .subtitle",
+                scroller: ".main_scrollsnap", // Especificando el contenedor de scroll
+                start: "top 80%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none" // Se activa una vez y no se repite
+            }
+        });
+
+        gsap.from(".section_mision .line_sup_description .super_description", 1.2, {
+            y: 200,  // Cambio de "y" a "x" para el movimiento de izquierda a derecha
+            ease: "power4.out",
+            delay: 0.3,
+            stagger: {
+                amount: 0.3
+            },
+            scrollTrigger: {
+                trigger: ".line_sup_description .super_description",
+                scroller: ".main_scrollsnap", // Especificando el contenedor de scroll
+                start: "top 90%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none" // Se activa una vez y no se repite
+            }
+        });
+
+        gsap.from(".section_mision .line_description .description", 1.8, {
+            y: 150,  // Cambio de "y" a "x" para el movimiento de izquierda a derecha
+            ease: "power4.out",
+            delay: 1,
+            stagger: {
+                amount: 0.3
+            },
+            scrollTrigger: {
+                trigger: ".line_description .description",
+                scroller: ".main_scrollsnap", // Especificando el contenedor de scroll
+                start: "top 100%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none" // Se activa una vez y no se repite
+            }
+        });
+        // VISION
+        gsap.from(".section_vision .line_subtitle .subtitle", 1, {
+            x: -300,  // Cambio de "y" a "x" para el movimiento de izquierda a derecha
+            ease: "power4.out",
+            delay: 0.1,
+            stagger: {
+                amount: 0.3
+            },
+            scrollTrigger: {
+                trigger: ".section_vision .line_subtitle .subtitle",
+                scroller: ".main_scrollsnap", // Especificando el contenedor de scroll
+                start: "top 80%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none" // Se activa una vez y no se repite
+            }
+        });
+        gsap.from(".section_vision .line_sup_description .super_description", 1.2, {
+            y: 200,  // Cambio de "y" a "x" para el movimiento de izquierda a derecha
+            ease: "power4.out",
+            delay: 0.3,
+            stagger: {
+                amount: 0.3
+            },
+            scrollTrigger: {
+                trigger: ".section_vision .line_sup_description .super_description",
+                scroller: ".main_scrollsnap", // Especificando el contenedor de scroll
+                start: "top 90%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none" // Se activa una vez y no se repite
+            }
+        });
+
+        gsap.from(".section_vision .line_description .description", 1.8, {
+            y: 100,  // Cambio de "y" a "x" para el movimiento de izquierda a derecha
+            ease: "power4.out",
+            delay: 1,
+            stagger: {
+                amount: 0.3
+            },
+            scrollTrigger: {
+                trigger: ".section_vision .line_description .description",
+                scroller: ".main_scrollsnap", // Especificando el contenedor de scroll
+                start: "top 100%",
+                end: "bottom 20%",
+                // markers: true,
+                toggleActions: "play none none none" // Se activa una vez y no se repite
+            }
         });
     </script>
 </body>

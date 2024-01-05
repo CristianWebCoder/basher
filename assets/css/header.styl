@@ -8,7 +8,23 @@
     display flex
     align-items stretch
     z-index 10
-    box-shadow 0px 1px 4px 0px rgba(0, 0, 0, 0.25)
+    transition all 0.3s ease
+    &.sticky
+        background-color $black
+        .container
+            .header_links
+                .links_menu
+                    > ul
+                        li
+                            > a
+                                color $white
+                                &:hover
+                                    opacity 0.5
+                                    color $white
+                            &.menu-item-has-children
+                                .submenu
+                                    background-color $black
+
     .container
         display flex
         justify-content space-between
@@ -30,7 +46,7 @@
                         figure
                             img
                                 width 100%
-                                max-width 298px
+                                max-width 170px
                                 height fit-content
         // 1.2. Menu
         .header_links
@@ -109,16 +125,9 @@
                 align-items center
             .icon
                 display none
-                justify-content flex-end
-                position absolute
-                bottom 2.5rem
-                right 1.25rem
-                img
-                    max-width 190px
         // 1.2. Hamburguer menu
         .header_menu
             display none
-// 2. For Max Width 1440px
 @media screen and (max-width: 1440px)
     .section_header
         .container
@@ -126,13 +135,11 @@
                 .links_menu
                     ul
                         gap 20px
-// 2. For Max Width 1024px
 @media screen and (max-width: 1024px)
     $nav_height_mobile = 90px
     :root
         --nav-height $nav_height_mobile
     .section_header
-        box-shadow 0px 1px 1px 0px rgba(0, 0, 0, 0.25)
         z-index 11
 @media screen and (max-width: 768px)
     .section_header
@@ -152,13 +159,22 @@
                 background-color $white
                 height calc(100vh - var(--nav-height))
                 transition all 0.3s ease
+                flex-wrap nowrap
+                overflow-y auto
+                &.sticky_links
+                    background-color $black
+                    .links_menu
+                        ul
+                            li
+                                a
+                                    border-bottom 1px solid #3e3e3e
                 &.show
                     right 0
                 .links_menu
                     > ul
                         width 100%
                         flex-direction column
-                        gap 32px
+                        gap 1rem
                         li
                             a
                                 width 100%
@@ -166,7 +182,7 @@
                                 font-family 'Gilroy Bold'
                                 padding 0
                                 border-bottom 1px solid $cuaternary_color
-                                padding-bottom 16px
+                                padding 1rem 0
                             &.menu-item-has-children
                                 display flex
                                 flex-direction column
@@ -209,6 +225,9 @@
                                                 font-size 1.125rem
                 .icon
                     display flex
+                    justify-content flex-end
+                    img
+                        max-width 140px
             .header_logo
                 a
                     ul
@@ -257,7 +276,7 @@
                 width 50%
             // 1.2. Menu
             .header_links
-                padding 60px 32px 20px
+                padding 20px 32px 20px
             // 1.3. Hamburguer Menu
             .header_menu
                 width 50%
